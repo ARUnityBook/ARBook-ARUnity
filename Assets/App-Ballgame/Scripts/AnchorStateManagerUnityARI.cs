@@ -68,7 +68,9 @@ public class AnchorStateManagerUnityARI : ARBase {
 		if (Input.touchCount > 0 && anchor != null) {
 
 			var touch = Input.GetTouch (0);
-			if (touch.phase == TouchPhase.Began) {
+			if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId) && 
+				(touch.phase == TouchPhase.Began)) 
+			{
 				var camera = GetCamera();
 
 				Ray ray = camera.ScreenPointToRay(Input.mousePosition);
