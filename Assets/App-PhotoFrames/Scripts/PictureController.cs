@@ -83,7 +83,7 @@ public class PictureController : MonoBehaviour {
 
 	private void AddPicture() {
 		toolbar.SetActive(false);
-		BallGameController.instance.CreateNewPicture();
+		PhotoFrameController.instance.CreateNewPicture();
 	}
 
 	private void DeletePicture() {

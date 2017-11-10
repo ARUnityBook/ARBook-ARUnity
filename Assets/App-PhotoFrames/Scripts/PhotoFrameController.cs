@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-public class BallGameController : MonoBehaviour {
+public class PhotoFrameController : MonoBehaviour {
 	public GameObject defaultPictureObject;
 	public float spawnDistance = 2.0f;
 	private int delay = 1;
-	public static BallGameController instance;
+	public static PhotoFrameController instance;
 	private AudioSource clickSound;
 
 	void Awake() {

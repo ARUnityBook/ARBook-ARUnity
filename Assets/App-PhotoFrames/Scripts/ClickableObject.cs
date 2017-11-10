@@ -8,7 +8,7 @@ public class ClickableObject : MonoBehaviour {
 	public ClickableObjectEvent OnClickableObjectClicked = new ClickableObjectEvent();
 
 	void OnMouseDown() {
-		BallGameController.instance.PlayClickFeedback();
+		PhotoFrameController.instance.PlayClickFeedback();
 		OnClickableObjectClicked.Invoke(gameObject);
 	}
 }
